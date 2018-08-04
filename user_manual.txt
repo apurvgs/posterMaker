@@ -1,0 +1,26 @@
+USER MANUAL
+
+This web application creates your desired poster
+First of all, you have to fill alll the details in the form
+
+Name of the Event-Store you events name and note that the name should be a single word and it should contain year
+
+Organised by-Will contain the organisation name
+
+Venue:- Stores the venue of the event
+
+Date:- Enter the date in the proper formar
+
+Enter the respective prizes and note that ther sum should be greater tha 1 lakh
+
+Instruction:- Stores all the relevant information
+
+Contact us:- Enter phone number
+
+Email id:- Enter the email id
+
+Upload the image and click on Submit
+
+Now to print a pdf file click on print
+
+The button show all displays all the posters forms entered

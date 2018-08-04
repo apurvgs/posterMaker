@@ -1,0 +1,75 @@
+#DEVELOPER MANUAL
+
+
+##################################################################
+
+PHP:-
+Object oriented php is used 
+Classes Poster and upload are made with following description
+
+###################################################################
+
+Poster class:-
+
+member variables:-
+$name_event;
+$name_event_error_1;
+$name_event_error_2;
+$organised_by;
+$venue;
+$date;
+$prize_1;
+$prize_2;
+$prize_3;
+$prize_error;
+$instruction;
+$contact_phone;
+$contact_phone_error;
+$email;
+$email_error;
+$file1;
+$file2;
+$file3;
+$file4;
+$file5;
+$haserror;
+
+member function:-
+validate():- checks if all the entered values satisfies the constaints
+
+-the member variables with suffix _error are used for error checking and get their values through validate()
+-all other member variables get their values through $_POST associative array 
+
+########################################################################
+
+upload class:-
+
+member variables:-
+
+$error:-user to store error if any generated while uploading image
+
+member functions:-
+uploadfile()
+
+#########################################################################
+
+
+index.php contains the required form interface 
+class.php has the required Poster class which is included in index.php
+upload.php has the required upload class which is included in server.php
+
+#########################################################################
+
+In server.php an instance of Poster class is created and also an instance of upload class is created.
+With the help of the upload class the files are uploaded.
+After uploading the files, all the variables are stored in the database "mydb"
+
+mysqli is used to connect sql and php
+
+With the help of mysqli instance, a connection is made to the database and sql queries are run.
+
+########################################################################
+
+php2.php contains a query where all the database items are retreived and displayed to the user
+
+######################################################################
